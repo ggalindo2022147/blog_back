@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { publicationsGet, publicationsPut, publicationsGetById } from "./publication.controller";
+import { publicationsGet, publicationsPut, publicationsGetById } from "./publication.controller.js";
 
 const router = Router();
 
-router.get('/publicacion', publicationsGet);
+router.get('/publicaciones', publicationsGet);
 
 router.get('/publicacion/:id', publicationsGetById);
 
